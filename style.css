@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fontfamily);
+    font-size: 0.813rem;
+    background-color: var(--Lightgray);
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url(/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+}
+
+:root{
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+    --fontfamily: 'Barlow Semi Condensed';
+}
+
+img{
+    margin:auto 10px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--Lightgrayishblue);
+}
+
+.svg{
+    border: none;
+    border-radius: 0;
+    width: 7rem;
+    z-index: 1;
+    opacity: 60%;
+    right: 31.25rem;
+}
+
+.card{
+    width: 20.75rem;
+    padding: 10px 0;
+    margin: 30px auto;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+.cutting-edge{
+    padding: 10px;
+}
+
+.purple{
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--Moderateviolet);
+}
+
+.blue{
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--Verydarkgrayishblue);
+}
+
+.white{
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--White);
+}
+
+.Darkblue{
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--Verydarkblackishblue);
+}
+
+.cream{
+    border-radius: 13px;
+    padding: 20px;
+    background-color: var(--Lightgrayishblue);
+}
+
+.head{
+    display: flex;
+}
+
+.head-2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 13px 0;
+    color: var(--White);
+    z-index: 0;
+}
+
+.comment{
+    color: var(--Lightgray);
+    line-height: 1.5em;
+}
+
+.highlight{
+    color: var(--Lightgray);
+}
+
+.cream .descrpt .highlight{
+    color: var(--Verydarkgrayishblue);
+}
+
+.white .comment{
+    color: var(--Verydarkgrayishblue);
+}
+
+.cream .comment{
+    color: var(--Verydarkgrayishblue);
+}
+
+.cream .head-2{
+    color: var(--Verydarkblackishblue);
+}
+
+.white .head-2{
+    color: var(--Verydarkblackishblue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 789px){
+    .cutting-edge{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .purple{
+        grid-column-start: span 2;
+        width: 43rem;
+    }
+
+    .cream{
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    .Darkblue{
+        grid-column-start: span 2;
+        width: 43rem;
+    }
+}
